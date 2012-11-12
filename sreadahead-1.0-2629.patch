@@ -1,0 +1,25 @@
+From 9f2e9b2861cc48687781cc4c7a198acad6def0a0 Mon Sep 17 00:00:00 2001
+From: Frederic Crozat <fcrozat@mandriva.com>
+Date: Fri, 20 Feb 2009 17:31:43 +0100
+Subject: [PATCH] Fix for 2.6.29
+
+---
+ sreadahead.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/sreadahead.c b/sreadahead.c
+index 3dbc3a7..1e6e5d2 100644
+--- a/sreadahead.c
++++ b/sreadahead.c
+@@ -411,7 +411,7 @@ static void trace_start(void)
+ 	fprintf(file, "open");
+ 	fclose(file);
+ 
+-	file = fopen("tracing/iter_ctrl", "w");
++	file = fopen("tracing/trace_options", "w");
+ 	if (!file) {
+ 		perror("Unable to control iteration\n");
+ 		exit(EXIT_FAILURE);
+-- 
+1.6.1.3
+

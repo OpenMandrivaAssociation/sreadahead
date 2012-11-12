@@ -1,0 +1,12 @@
+diff -p -up sreadahead-1.0/sreadahead.c.debugmnt sreadahead-1.0/sreadahead.c
+--- sreadahead-1.0/sreadahead.c.debugmnt	2009-01-30 16:10:13.000000000 +0100
++++ sreadahead-1.0/sreadahead.c	2009-01-30 16:10:10.000000000 +0100
+@@ -524,6 +524,8 @@ static void trace_stop(int signal)
+ 			continue;
+ 		if (strncmp(filename, "/proc/", 6) == 0)
+ 			continue;
++		if (strncmp(filename, DEBUGFS_MNT, 27) == 0)
++			continue;
+ 
+ 		if (racount >= MAXR) {
+ 			perror("Max records exceeded!");

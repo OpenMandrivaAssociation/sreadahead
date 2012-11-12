@@ -1,0 +1,18 @@
+diff -p -up sreadahead-1.0/sreadahead.c.ftrace_printk sreadahead-1.0/sreadahead.c
+--- sreadahead-1.0/sreadahead.c.ftrace_printk	2009-01-30 12:08:45.000000000 +0100
++++ sreadahead-1.0/sreadahead.c	2009-01-30 12:10:07.000000000 +0100
+@@ -409,6 +409,14 @@ static void trace_start(void)
+ 	fprintf(file, "open");
+ 	fclose(file);
+ 
++	file = fopen("tracing/iter_ctrl", "w");
++	if (!file) {
++		perror("Unable to control iteration\n");
++		exit(EXIT_FAILURE);
++	}
++	fprintf(file, "ftrace_printk");
++	fclose(file);
++
+ 	file = fopen("tracing/current_tracer", "r");
+ 	fgets(buf, 4096, file);
+ 	fclose(file);
