@@ -47,3 +47,30 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 /sbin/sreadahead
 %{_var}/lib/sreadahead
+
+
+%changelog
+* Wed Sep 28 2011 Götz Waschk <waschk@mandriva.org> 1.0-4mdv2012.0
++ Revision: 701633
+- rebuild
+
+* Sun Sep 20 2009 Thierry Vignaud <tv@mandriva.org> 1.0-3mdv2011.0
++ Revision: 445229
+- rebuild
+
+* Fri Feb 20 2009 Frederic Crozat <fcrozat@mandriva.com> 1.0-2mdv2009.1
++ Revision: 343374
+- Patch3: fix for 2.6.29 kernel
+
+* Thu Feb 05 2009 Frederic Crozat <fcrozat@mandriva.com> 1.0-1mdv2009.1
++ Revision: 337894
+- Release 1.0 (name changed)
+- Patch0 (SVN): allow to change timeout
+- Patch1: enable ftrace_printk
+- Patch2: ignore file from debugfs
+- Upstream project changed name
+
+* Mon Nov 17 2008 Thierry Vignaud <tv@mandriva.org> 0.01-1mdv2009.1
++ Revision: 304008
+- import superreadahead
+
