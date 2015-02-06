@@ -1,6 +1,6 @@
 Name:           sreadahead
 Version:        1.0
-Release:        %mkrel 4
+Release:        5
 Summary:        Read ahead pagecontent at boot
 Group:          System/Base
 URL:            http://code.google.com/p/sreadahead/
