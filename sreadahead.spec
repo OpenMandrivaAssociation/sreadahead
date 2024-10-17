@@ -3,7 +3,7 @@ Version:        1.0
 Release:        5
 Summary:        Read ahead pagecontent at boot
 Group:          System/Base
-URL:            http://code.google.com/p/sreadahead/
+URL:            https://code.google.com/p/sreadahead/
 License:        GPLv2
 Source0:        http://sreadahead.googlecode.com/files/sreadahead-1.0.tar.gz
 # (fc) 1.0-1mdv allow to change default timeout (SVN)
