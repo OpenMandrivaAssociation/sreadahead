@@ -16,6 +16,7 @@ Patch2:		sreadahead-1.0-debugfsmnt.patch
 Patch3:		sreadahead-1.0-2629.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
+BuildRequires:	make
 %description
 Sreadahead is a read ahead pagecontent at boot.
 
